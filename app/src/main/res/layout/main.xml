@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+		<Button
+			android:id="@+id/goBtn"
+			android:layout_width="wrap_content"
+			android:layout_height="50dp"
+			android:text="Go"/>
+		<EditText
+			android:id="@+id/searchBar"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:layout_toRightOf="@+id/goBtn"
+			android:hint="website"
+			android:textSize="25sp"
+			android:background="@drawable/url_bar"/>
+	</RelativeLayout>
+	<WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/browser"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+
+</LinearLayout>
